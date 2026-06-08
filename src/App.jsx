@@ -1,8 +1,12 @@
 import { useEffect, useState } from 'react'
 import './App.css'
-import { TodoProvider } from './contexts/TodoContext'
-import { TodoForms } from './components/Index';
-import { Todoitems } from './components/Index';
+import { TodoProvider } from './contexts/TodoContext.js'
+// import { TodoForms } from './components/Index';
+// import { Todoitems } from './components/Index';
+
+import { TodoForms } from './components/index.js';
+import { Todoitems } from './components/index.js';
+// use case sensitive names because on deyloyment it's a linux environment which is highly case sensitive 
 
 function App() {
   const [todos, setTodos] = useState([]);
